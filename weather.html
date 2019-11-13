@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="weather.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="weather.search.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row bg-primary fixed-top" style="height:75px">
+                <div class="col-sm-3">
+
+                </div>
+                <div class="col-sm-6 make-center">
+                    <input type="text" id="inputId" class="form-control form-control-lg" placeholder="Search here...">
+                </div>
+                <div class="col-sm-3 make-center">
+                        <button  type="button" class="btn btn-secondary btn-lg" onclick="ajaxSearch()">SEARCH</button>
+                </div>
+            </div>
+            <div class="row" style="margin-top:75px;">
+                <div class="col-sm-3">
+
+                </div>
+                <div class="col-sm-6" id="parent">
+
+                </div>
+                <div class="col-sm-3">
+
+                </div>
+            </div>
+        </div>
+        <!--Ref-->
+        <div id="refblock" style="display: none;">
+                <div class="row bg-info mt-1 make-center text-white text-capitalize" style="height: 150px;position: relative;">
+                        <div class="m-2 h6" style="position:absolute;top:0;left:0;">City</div>
+                        <div class="m-2 h6 " style="position:absolute;top:0;right:0">Date</div>
+                        <div class="m-2 h6 badge badge-secondary" style="position:absolute;bottom:0;left:0">
+                            Max-temp
+                        </div>
+                        <div class="m-2 h6 badge badge-danger" style="position:absolute;bottom:0;right:0">Min-temp</div>
+                        <div class="make-center h3">Description</div>
+                </div>
+            </div>
+    </body>
+</html>
